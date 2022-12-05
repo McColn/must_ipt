@@ -1,0 +1,78 @@
+{% extends 'field/base.html' %}
+{% load static %}
+{% block content %}
+    <style>
+        body{
+            background-color: rgb(219, 219, 223);
+        }
+        .row{
+            background-color: rgb(171, 173, 253);
+         }
+        .col-md-1{
+            color: white;
+            font-size: 20px;
+        }
+        .col-md-1 a{
+            text-decoration: none;
+            color: white;
+        }
+        
+        #moja{
+            width: 20%;
+            height: 200px;
+            float: left;
+            border: 2px solid blue;
+            border-radius: 20px;
+            background-color: rgb(93, 151, 218);
+            color: white;
+        }
+        #mbili{
+            width: 20%;
+            height: 200px;
+            float: right;
+            border: 2px solid blue;
+            border-radius: 20px;
+            background-color: rgb(93, 151, 218);
+            color: white;
+        }
+        #tatu{
+            width: 20%;
+            height: 200px;
+            margin: 0 auto;
+            border: 2px solid blue;
+            border-radius: 20px;
+            background-color: rgb(93, 151, 218);
+            color: white;
+        }
+        #horizontal-line{
+            width: 90%px;
+            border: 2px solid red;
+        }
+        
+    </style>
+    <h3>OUR TEAM</h3>
+    <div id="horizontal-line"></div><br>
+            
+        <div id="moja">
+            <h3 style="color: red;">Cornel Mtavangu</h3>
+            <p>Seniour computer engineer, with masters degree in computer engineering
+                 from university of dar es salaam(2002), currently teaching electronics
+                  subjects for bachelor degree students</p>
+                  <img src="{% static 'field/coln.jpg' %}" class="img-circle"  height="100px" width="100px">
+        </div>
+        <div id="mbili">
+            <h3 style="color: red;">Dregany Yaredy</h3>
+            <p>Seniour computer engineer, with masters degree in computer engineering
+                 from university of dar es salaam(2002), currently teaching electronics
+                  subjects for bachelor degree students</p>
+                  <img src="{% static 'field/Dregany.jpg' %}" class="img-circle"  height="100px" width="100px">
+        </div>
+        <div id="tatu">
+            <h3 style="color: red;">Titho Ngailo</h3>
+            <p>Seniour computer engineer, with masters degree in computer engineering
+                 from university of dar es salaam(2002), currently teaching electronics
+                  subjects for bachelor degree students</p>
+                  <img src="{% static 'field/coln.jpg' %}" class="img-circle"  height="100px" width="100px">
+        </div>
+    </center>
+    {% endblock %}
